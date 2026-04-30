@@ -3,8 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/layout/header/navbar";
+import Footer from "@/components/layout/footer/footer";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
 	title: "Global Cardiovascular Research Alliance",
@@ -23,7 +24,8 @@ export default function RootLayout({
 		>
 			<body>
 				<Navbar />
-				<main className="space-y-8 md:space-y-32">{children}</main>
+				<main className="space-y-20 md:space-y-32">{children}</main>
+				<Footer />
 			</body>
 		</html>
 	);

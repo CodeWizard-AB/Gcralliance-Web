@@ -1,3 +1,4 @@
+import { Cover } from "@/components/ui/cover";
 import {
 	BadgeCheck,
 	BookOpenText,
@@ -48,8 +49,9 @@ export default function Mission() {
 							<BadgeCheck className="size-4" />
 							Our Mission & Legacy
 						</div>
-						<h2 className="mt-3 text-balance text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-							Democratizing Cardiovascular Research Globally
+						<h2 className="mt-3 text-balance text-3xl font-bold leading-normal tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+							Democratizing
+							<Cover className="md:text-7xl text-4xl">Cardiovascular</Cover> Research Globally
 						</h2>
 
 						<div className="mt-6 space-y-5 text-pretty text-base leading-relaxed text-foreground/80 sm:text-lg">

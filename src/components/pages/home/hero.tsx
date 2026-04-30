@@ -10,7 +10,7 @@ import Stats from "./Stats";
 
 export default function Hero() {
 	return (
-		<div className="flex items-center justify-center overflow-hidden">
+		<section className="flex items-center justify-center overflow-hidden">
 			<div className="mx-auto relative grid w-full max-w-(--breakpoint-xl) gap-12 px-6 py-12 lg:grid-cols-2 lg:py-0">
 				<Spotlight
 					className="-top-40 left-0 md:top-0 md:-left-40 hidden dark:block"
@@ -74,7 +74,7 @@ export default function Hero() {
 					/>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

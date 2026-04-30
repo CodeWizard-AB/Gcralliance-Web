@@ -6,7 +6,7 @@ import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 
 export default function Navbar() {
 	return (
-		<nav className="h-16 border-b bg-background">
+		<nav className="h-16 md:h-20 border-b bg-background">
 			<div className="mx-auto flex h-full container items-center justify-between px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center gap-12">
 					<Logo />

@@ -10,12 +10,10 @@ import Image from "next/image";
 
 export default function Mission() {
 	return (
-		<section className="flex items-center justify-center overflow-hidden py-16 md:py-20">
-			<div className="container mx-auto relative grid items-stretch gap-8 md:gap-12 lg:auto-rows-fr lg:grid-cols-2">
+		<section className="flex items-center justify-center overflow-hidden">
+			<div className="container px-6 mx-auto relative grid items-stretch gap-8 md:gap-12 lg:auto-rows-fr lg:grid-cols-2">
 				<div className="relative order-2 h-full lg:order-1">
-					<div className="absolute -top-6 -left-6 h-32 w-32 rounded-full bg-primary/15 blur-3xl dark:bg-primary/20" />
-					<div className="absolute -bottom-10 -right-6 h-40 w-40 rounded-full bg-chart-2/20 blur-3xl dark:bg-chart-2/15" />
-					<div className="relative h-full min-h-[420px] overflow-hidden rounded-3xl border border-border/70 bg-card shadow-lg lg:min-h-[680px]">
+					<div className="relative h-full min-h-[420px] overflow-hidden rounded-3xl border border-border/70 bg-card lg:min-h-[680px]">
 						<Image
 							src="https://ik.imagekit.io/gcralliance/mission-vision"
 							alt="A team of doctors and young researchers collaborating in a modern clinical setting"
@@ -45,12 +43,12 @@ export default function Mission() {
 				</div>
 
 				<div className="order-1 h-full lg:order-2">
-					<div className="flex h-full min-h-[420px] flex-col rounded-3xl border border-border/70 bg-card/70 p-6 shadow-lg backdrop-blur-sm sm:p-8 lg:min-h-[680px]">
+					<div className="flex h-full min-h-[420px] flex-col rounded-3xl border border-border/70 bg-card/70 p-6 backdrop-blur-sm sm:p-8 lg:min-h-[680px]">
 						<div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-sm font-semibold tracking-wide text-primary">
 							<BadgeCheck className="size-4" />
 							Our Mission & Legacy
 						</div>
-						<h2 className="mt-3 text-balance font-satoshi text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+						<h2 className="mt-3 text-balance text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl">
 							Democratizing Cardiovascular Research Globally
 						</h2>
 

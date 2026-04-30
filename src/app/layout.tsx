@@ -23,7 +23,7 @@ export default function RootLayout({
 		>
 			<body>
 				<Navbar />
-				<main>{children}</main>
+				<main className="space-y-8 md:space-y-32">{children}</main>
 			</body>
 		</html>
 	);

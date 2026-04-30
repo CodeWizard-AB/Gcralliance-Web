@@ -16,10 +16,7 @@ export default function Navbar() {
 				</div>
 
 				<div className="flex items-center gap-3">
-					<Button className="hidden sm:inline-flex" variant="outline">
-						Sign In
-					</Button>
-					<Button>Sign Up</Button>
+					<Button>Join Our Community</Button>
 					<AnimatedThemeToggler />
 
 					{/* Mobile Menu */}

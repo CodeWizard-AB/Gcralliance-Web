@@ -17,31 +17,33 @@ export default function Hero() {
 					fill="white"
 				/>
 				<Spotlight
-					className="-top-40 left-0 md:top-0 md:-left-40 dark:hidden"
+					className="-top-40 left-0 md:-top-10 md:-left-40 dark:hidden"
 					fill="red"
 				/>
 				<div className="my-auto lg:py-20">
-					<Badge
-						asChild
-						className="rounded-full border-border py-1"
-						variant="secondary"
-					>
-						<Link href="#">
-							Advancing Cardiovascular Research{" "}
-							<ArrowUpRight className="ml-1 size-4" />
-						</Link>
-					</Badge>
-					<h1 className="mt-6 max-w-[17ch] font-satoshi font-bold text-4xl leading-[1.2]! tracking-tight md:text-5xl lg:text-[2.75rem] xl:text-[4rem]">
+					<div className="flex justify-center md:justify-start">
+						<Badge
+							asChild
+							className="rounded-full border-border py-4 px-4"
+							variant="secondary"
+						>
+							<Link href="#">
+								Advancing Cardiovascular Research{" "}
+								<ArrowUpRight className="ml-1 size-4" />
+							</Link>
+						</Badge>
+					</div>
+					<h1 className="mt-6 max-w-[17ch] font-satoshi font-bold text-4xl leading-[1.2]! tracking-tight md:text-5xl md:text-left text-center lg:text-[2.75rem] xl:text-[4rem]">
 						Empowering the Next Generation of
 						<Cover>Medical Minds</Cover>
 					</h1>
-					<p className="mt-6 max-w-[60ch] text-foreground/80 text-lg">
+					<p className="mt-6 text-center md:text-left max-w-[60ch] text-foreground/80 text-lg">
 						The Global Cardiovascular Research Alliance connects aspiring
 						medical professionals with world-class mentors, cutting-edge
 						research, and a global community committed to transforming heart
-						health
+						health.
 					</p>
-					<div className="mt-12 flex items-center flex-wrap justify-center md:justify-start gap-4">
+					<div className="mt-12 flex items-center flex-wrap justify-center md:justify-start gap-4 mb-8">
 						<Button className="text-base" size="lg">
 							Explore Our Research
 							<ArrowUpRight className="h-5! w-5!" />
@@ -55,10 +57,10 @@ export default function Hero() {
 							Become a Member
 						</Button>
 					</div>
-					<div className="flex flex-row items-center mt-10 mb-6 w-full">
+					<Stats />
+					<div className="flex flex-row items-center justify-center md:justify-start mt-10 w-full">
 						<AnimatedTooltip items={people} />
 					</div>
-					<Stats />
 				</div>
 				<div className="aspect-video w-full rounded-xl bg-accent lg:aspect-auto lg:w-250 lg:rounded-none">
 					<Video

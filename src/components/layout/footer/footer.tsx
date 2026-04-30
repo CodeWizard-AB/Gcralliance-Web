@@ -17,7 +17,7 @@ export default function Footer() {
 							height={200}
 						/>
 
-						<ul className="mt-6 flex flex-wrap items-center justify-center gap-4">
+						<ul className="mt-6 px-6 flex flex-wrap items-center justify-center gap-4">
 							{navLinks.map(({ name, href }) => (
 								<li key={name}>
 									<Link

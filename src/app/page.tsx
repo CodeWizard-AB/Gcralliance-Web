@@ -1,4 +1,5 @@
 import Hero from "@/components/pages/home/hero";
+import Membership from "@/components/pages/home/membership";
 import Mission from "@/components/pages/home/mission";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
 		<>
 			<Hero />
 			<Mission />
+			<Membership />
 		</>
 	);
 }

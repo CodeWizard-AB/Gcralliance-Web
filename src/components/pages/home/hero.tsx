@@ -1,6 +1,4 @@
 import { ArrowUpRight, PersonStandingIcon } from "lucide-react";
-import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Video } from "@imagekit/next";
 import { Cover } from "@/components/ui/cover";
@@ -21,18 +19,11 @@ export default function Hero() {
 					fill="red"
 				/>
 				<div className="my-auto lg:py-20">
-					<div className="flex justify-center md:justify-start">
-						<Badge
-							asChild
-							className="rounded-full border-border py-4 px-4"
-							variant="secondary"
-						>
-							<Link href="#">
-								Advancing Cardiovascular Research{" "}
-								<ArrowUpRight className="ml-1 size-4" />
-							</Link>
-						</Badge>
+					<div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-sm font-semibold tracking-wide text-primary">
+						Advancing Cardiovascular Research{" "}
+						<ArrowUpRight className="ml-1 size-4" />
 					</div>
+
 					<h1 className="mt-6 max-w-[17ch] font-satoshi font-bold text-4xl leading-[1.2]! tracking-tight md:text-5xl md:text-left text-center lg:text-[2.75rem] xl:text-[4rem]">
 						Empowering the Next Generation of
 						<Cover>Medical Minds</Cover>

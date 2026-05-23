@@ -6,7 +6,10 @@ import { tiers } from "@/lib/constants";
 
 export default function Membership() {
 	return (
-		<section className="flex items-center justify-center overflow-hidden">
+		<section
+			id="membership"
+			className="flex scroll-mt-24 items-center justify-center overflow-hidden"
+		>
 			<div className="mx-auto container relative px-6">
 				<div className="relative grid gap-8 border-b border-border/70 pb-8 lg:grid-cols-12 lg:items-end">
 					<div className="lg:col-span-8">

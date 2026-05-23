@@ -11,7 +11,10 @@ import Image from "next/image";
 
 export default function Mission() {
 	return (
-		<section className="flex items-center justify-center overflow-hidden">
+		<section
+			id="mission"
+			className="flex scroll-mt-24 items-center justify-center overflow-hidden"
+		>
 			<div className="container px-6 mx-auto relative grid items-stretch gap-8 md:gap-12 lg:auto-rows-fr lg:grid-cols-2">
 				<div className="relative order-2 h-full lg:order-1">
 					<div className="relative h-full min-h-[420px] overflow-hidden rounded-3xl border border-border/70 bg-card lg:min-h-[680px]">

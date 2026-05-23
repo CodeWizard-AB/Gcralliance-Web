@@ -1,4 +1,10 @@
-import { Building2, Stethoscope, UserRound } from "lucide-react";
+import { Building2, Globe2, Mail, Stethoscope, UserRound } from "lucide-react";
+import {
+	FaXTwitter,
+	FaFacebook,
+	FaInstagram,
+	FaLinkedin,
+} from "react-icons/fa6";
 
 export const navLinks = [
 	{ name: "Home", href: "/" },
@@ -51,4 +57,57 @@ export const tiers = [
 		href: "#",
 		featured: false,
 	},
-]
+];
+
+export const ORGANIZATION =
+	"Global Cardiovascular Research Alliance (GCRAlliance)";
+export const WEBSITE = "www.GCRAlliancelliance.org";
+export const EMAIL = "info@GCRAlliancelliance.org";
+
+export const contactDetails = [
+	{
+		icon: Building2,
+		label: "Organization",
+		value: ORGANIZATION,
+		href: undefined,
+	},
+	{
+		icon: Globe2,
+		label: "Website",
+		value: WEBSITE,
+		href: `https://${WEBSITE}`,
+	},
+	{
+		icon: Mail,
+		label: "Email",
+		value: EMAIL,
+		href: `mailto:${EMAIL}`,
+	},
+] as const;
+
+export const socialLinks = [
+	{
+		name: "Instagram",
+		handle: "@GCRAlliancelliance",
+		href: "https://instagram.com/GCRAlliancelliance",
+		icon: FaInstagram,
+	},
+	{
+		name: "LinkedIn",
+		handle: "Global Cardiovascular Research Alliance",
+		href: "https://www.linkedin.com/company/gcralliance",
+		icon: FaLinkedin,
+	},
+	{
+		name: "X (Twitter)",
+		handle: "@GCRAlliancelliance",
+		href: "https://x.com/GCRAlliancelliance",
+		icon: FaXTwitter,
+	},
+	{
+		name: "Facebook",
+		handle: "GCRAlliancelliance",
+		href: "https://facebook.com/GCRAlliancelliance",
+		icon: FaFacebook,
+	},
+] as const;

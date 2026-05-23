@@ -11,7 +11,11 @@ import {
 } from "@/components/ui/navigation-menu";
 import { navLinks } from "@/lib/constants";
 
-export default function NavMenu(props: ComponentProps<typeof NavigationMenu>) {
+interface NavMenuProps extends ComponentProps<typeof NavigationMenu> {
+	onLinkClick?: () => void;
+}
+
+export default function NavMenu({ onLinkClick, ...props }: NavMenuProps) {
 	return (
 		<NavigationMenu {...props}>
 			<NavigationMenuList className="data-[orientation=vertical]:-ms-2 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
@@ -21,7 +25,9 @@ export default function NavMenu(props: ComponentProps<typeof NavigationMenu>) {
 							asChild
 							className={navigationMenuTriggerStyle()}
 						>
-							<Link href={link.href}>{link.name}</Link>
+							<Link href={link.href} onClick={onLinkClick}>
+								{link.name}
+							</Link>
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 				))}

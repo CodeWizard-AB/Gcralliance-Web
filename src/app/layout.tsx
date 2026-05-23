@@ -22,7 +22,7 @@ export default function RootLayout({
 			lang="en"
 			className={cn("h-full", "antialiased", "font-sans", inter.variable)}
 		>
-			<body>
+			<body cz-shortcut-listen="true">
 				<Navbar />
 				<main className="space-y-20 md:space-y-32">{children}</main>
 				<Footer />

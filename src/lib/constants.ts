@@ -1,4 +1,12 @@
-import { Building2, Globe2, Mail, Stethoscope, UserRound } from "lucide-react";
+import {
+	Building2,
+	Compass,
+	Globe2,
+	Mail,
+	Stethoscope,
+	UserRound,
+	Users,
+} from "lucide-react";
 import {
 	FaXTwitter,
 	FaFacebook,
@@ -12,7 +20,7 @@ export const navLinks = [
 	{ name: "Blog", href: "/blog" },
 	{ name: "Ambassadors", href: "/ambassadors" },
 	{ name: "Contact Us", href: "/contact" },
-];
+] as const;
 
 export const tiers = [
 	{
@@ -57,7 +65,7 @@ export const tiers = [
 		href: "#",
 		featured: false,
 	},
-];
+] as const;
 
 export const ORGANIZATION =
 	"Global Cardiovascular Research Alliance (GCRAlliance)";
@@ -109,5 +117,55 @@ export const socialLinks = [
 		handle: "GCRAlliancelliance",
 		href: "https://facebook.com/GCRAlliancelliance",
 		icon: FaFacebook,
+	},
+] as const;
+
+export const contactOptions = [
+	{
+		title: "Membership Inquiries",
+		description:
+			"Interested in joining GCRAlliance or learning about membership tiers?",
+		icon: UserRound,
+		links: [
+			{ label: "Membership Page", href: "/#membership" },
+			{ label: "send us a message above", href: "#contact-form", form: true },
+		],
+	},
+	{
+		title: "Research & Mentorship Inquiries",
+		description:
+			"Looking to start or continue your research journey with GCRAlliance?",
+		icon: Compass,
+		links: [
+			{ label: "Research Mentorship Page", href: "/#mission" },
+			{ label: "reach out directly", href: "#contact-form", form: true },
+		],
+	},
+	{
+		title: "Ambassador Program Inquiries",
+		description: "Want to represent GCRAlliance in your region?",
+		icon: Users,
+		links: [
+			{ label: "Ambassadors Page", href: "/ambassadors" },
+			{
+				label: "contact us via the form above",
+				href: "#contact-form",
+				form: true,
+			},
+		],
+	},
+	{
+		title: "Institutional Partnerships",
+		description:
+			"Is your university or hospital interested in collaborating with GCRAlliance?",
+		icon: Building2,
+		links: [
+			{
+				label: "Send us a message",
+				href: "#contact-form",
+				form: true,
+				note: 'with the subject line "Institutional Partnership."',
+			},
+		],
 	},
 ] as const;

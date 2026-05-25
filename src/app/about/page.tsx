@@ -1,5 +1,6 @@
 import AboutBanner from "@/components/pages/about/about-banner";
 import FoundationalPillars from "@/components/pages/about/foundational-pillars";
+import MembershipCta from "@/components/pages/about/membership-cta";
 import MissionVision from "@/components/pages/about/mission-vision";
 
 export default function AboutPage() {
@@ -8,6 +9,7 @@ export default function AboutPage() {
 			<AboutBanner />
 			<MissionVision />
 			<FoundationalPillars />
+			<MembershipCta />
 		</section>
 	);
 }

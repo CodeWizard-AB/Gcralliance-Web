@@ -11,7 +11,7 @@ export default function FoundationalPillars() {
 	return (
 		<section
 			id="foundational-pillars"
-			className="scroll-mt-24 py-12 md:py-16"
+			className="scroll-mt-24 py-20 md:py-32"
 			aria-labelledby="foundational-pillars-heading"
 		>
 			<div className="container relative mx-auto">

@@ -1,5 +1,5 @@
 import { Cover } from "@/components/ui/cover";
-import { pillars } from "@/lib/constants";
+import { missionVisions } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { HeartHandshake } from "lucide-react";
 
@@ -10,7 +10,7 @@ export default function MissionVision() {
 			className="flex scroll-mt-24 items-center justify-center overflow-hidden"
 			aria-labelledby="mission-vision-heading"
 		>
-			<div className="container relative mx-auto px-6">
+			<div className="container relative mx-auto">
 				<div className="mx-auto max-w-3xl text-center">
 					<div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-sm font-semibold tracking-wide text-primary">
 						<HeartHandshake className="size-4" aria-hidden />
@@ -43,7 +43,7 @@ export default function MissionVision() {
 						</div>
 
 						<div className="relative grid gap-6 lg:grid-cols-2 lg:gap-8">
-							{pillars.map(
+							{missionVisions.map(
 								({ label, icon: Icon, body, cardClassName, iconClassName }) => (
 									<article
 										key={label}

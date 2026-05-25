@@ -1,9 +1,13 @@
 import {
+	Award,
 	Building2,
 	Compass,
 	Eye,
 	Globe2,
+	GraduationCap,
+	Handshake,
 	Mail,
+	Scale,
 	Stethoscope,
 	UserRound,
 	Users,
@@ -171,7 +175,52 @@ export const contactOptions = [
 	},
 ] as const;
 
-export const pillars = [
+export const foundationalPillarsSection = {
+	eyebrow: "What We Stand On",
+	heading: "Our Foundational Pillars",
+	description:
+		"Five principles that shape every fellowship, mentorship pathway, and collaboration we build across the alliance.",
+} as const;
+
+export const foundationalPillars = [
+	{
+		id: "equity",
+		index: "01",
+		title: "Uncompromising Equity",
+		body: "We declare that access to scientific discovery is a right, not a privilege. We engineer robust pathways for scholars of all backgrounds through subsidized fellowships, elite mentorship, and universally accessible clinical resources.",
+		icon: Scale,
+	},
+	{
+		id: "excellence",
+		index: "02",
+		title: "Absolute Excellence",
+		body: "We hold our methodology, our mentorship, and our community to the most exacting academic and ethical standards. Every manuscript, symposium, and collaboration is a testament to superior quality.",
+		icon: Award,
+	},
+	{
+		id: "collaboration",
+		index: "03",
+		title: "Strategic Collaboration",
+		body: "The most revolutionary breakthroughs occur at the nexus of diverse intellects. We actively forge alliances across borders, disciplines, and prestigious institutions to accelerate clinical discovery.",
+		icon: Handshake,
+	},
+	{
+		id: "education",
+		index: "04",
+		title: "Advanced Education",
+		body: "From intricate case report masterclasses to international academic congresses, our commitment to forging scientific confidence and profound research literacy is relentless.",
+		icon: GraduationCap,
+	},
+	{
+		id: "impact",
+		index: "05",
+		title: "Global Impact",
+		body: "The true measure of our work is the lives it ultimately transforms. We strategically align our research architecture with the most pressing cardiovascular disease priorities worldwide.",
+		icon: Globe2,
+	},
+] as const;
+
+export const missionVisions = [
 	{
 		label: "Our Mission",
 		icon: Compass,

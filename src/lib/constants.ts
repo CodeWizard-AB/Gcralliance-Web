@@ -3,12 +3,15 @@ import {
 	Building2,
 	Compass,
 	Eye,
+	FileEdit,
 	Globe2,
 	GraduationCap,
 	Handshake,
 	Mail,
+	Presentation,
 	Scale,
 	Stethoscope,
+	UserCheck,
 	UserRound,
 	Users,
 } from "lucide-react";
@@ -22,8 +25,9 @@ import {
 export const navLinks = [
 	{ name: "Home", href: "/" },
 	{ name: "About", href: "/about" },
-	{ name: "Blog", href: "/blog" },
-	{ name: "Ambassadors", href: "/ambassadors" },
+	{ name: "Research", href: "/research" },
+	// { name: "Blog", href: "/blog" },
+	// { name: "Ambassadors", href: "/ambassadors" },
 	{ name: "Contact Us", href: "/contact" },
 ] as const;
 
@@ -238,5 +242,32 @@ export const missionVisions = [
 			"border-chart-2/35 bg-linear-to-br from-chart-2/15 via-chart-2/5 to-transparent hover:border-chart-2/45 dark:border-chart-5/35 dark:from-chart-5/15 dark:via-chart-5/5 dark:hover:border-chart-5/45",
 		iconClassName:
 			"border-chart-2/35 bg-chart-2/15 text-chart-2 group-hover:border-chart-2/45 group-hover:bg-chart-2/20 dark:border-chart-5/35 dark:bg-chart-5/15 dark:text-chart-5 dark:group-hover:border-chart-5/45 dark:group-hover:bg-chart-5/20",
+	},
+] as const;
+
+export const supports = [
+	{
+		title: "One-on-One Mentorship",
+		description:
+			"Get paired with a dedicated mentor who has walked the path before you. From brainstorming to publication, your mentor is with you every step of the way.",
+		icon: UserCheck,
+	},
+	{
+		title: "Group Webinars & Workshops",
+		description:
+			"Participate in live, interactive sessions on case report writing, research methodology, statistical analysis, and manuscript preparation — led by published researchers and experienced clinicians.",
+		icon: Presentation,
+	},
+	{
+		title: "Peer Collaboration",
+		description:
+			"Connect with co-authors, reviewers, and research partners from the GCRAlliance global network. Collaboration accelerates publication and broadens your perspective.",
+		icon: Users,
+	},
+	{
+		title: "Editorial Feedback",
+		description:
+			"Receive structured, constructive feedback on your drafts before submission helping you put your best work forward.",
+		icon: FileEdit,
 	},
 ] as const;

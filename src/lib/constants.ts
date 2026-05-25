@@ -1,6 +1,7 @@
 import {
 	Building2,
 	Compass,
+	Eye,
 	Globe2,
 	Mail,
 	Stethoscope,
@@ -167,5 +168,26 @@ export const contactOptions = [
 				note: 'with the subject line "Institutional Partnership."',
 			},
 		],
+	},
+] as const;
+
+export const pillars = [
+	{
+		label: "Our Mission",
+		icon: Compass,
+		body: "To unequivocally democratize access to cardiovascular research by uniting aspiring medical professionals with world-class mentorship, elite resources, and global networks transcending geography, background, and institutional limitations.",
+		cardClassName:
+			"border-primary/30 bg-linear-to-br from-primary/12 via-primary/5 to-transparent hover:border-primary/40",
+		iconClassName:
+			"border-primary/30 bg-primary/15 text-primary group-hover:border-primary/40 group-hover:bg-primary/20",
+	},
+	{
+		label: "Our Vision",
+		icon: Eye,
+		body: "A future where every brilliant medical mind possesses an unimpeded pathway to pioneer cardiovascular science and profoundly elevate global patient outcomes.",
+		cardClassName:
+			"border-chart-2/35 bg-linear-to-br from-chart-2/15 via-chart-2/5 to-transparent hover:border-chart-2/45 dark:border-chart-5/35 dark:from-chart-5/15 dark:via-chart-5/5 dark:hover:border-chart-5/45",
+		iconClassName:
+			"border-chart-2/35 bg-chart-2/15 text-chart-2 group-hover:border-chart-2/45 group-hover:bg-chart-2/20 dark:border-chart-5/35 dark:bg-chart-5/15 dark:text-chart-5 dark:group-hover:border-chart-5/45 dark:group-hover:bg-chart-5/20",
 	},
 ] as const;

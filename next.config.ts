@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
 				hostname: "ik.imagekit.io",
 				pathname: "/gcralliance/**",
 			},
+			{
+				protocol: "https",
+				hostname: "cdn.sanity.io",
+				pathname: "/images/**",
+			},
 		],
 	},
 };

@@ -32,7 +32,7 @@ export const navLinks = [
 	{ name: "About", href: "/about" },
 	{ name: "Research", href: "/research" },
 	// { name: "Blog", href: "/blog" },
-	// { name: "Ambassadors", href: "/ambassadors" },
+	{ name: "Ambassadors", href: "/ambassadors" },
 	{ name: "Contact Us", href: "/contact" },
 ] as const;
 

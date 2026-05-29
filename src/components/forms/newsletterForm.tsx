@@ -50,7 +50,7 @@ export default function NewsletterForm({
 	return (
 		<section
 			className={cn(
-				"flex items-center justify-center overflow-hidden",
+				"flex items-center justify-center overflow-hidden mt-20 md:mt-32",
 				className,
 			)}
 		>

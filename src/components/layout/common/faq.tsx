@@ -58,7 +58,7 @@ const faqs: FrequentlyAskedQuestion[] = [
 export default function Faq() {
 	return (
 		<section className="container mx-auto">
-			<div className="px-6 text-center scroll-mt-24 pb-20 md:pb-32">
+			<div className="px-6 text-center">
 				<h2 className="text-balance text-center font-medium text-4xl tracking-[-0.04em] sm:text-[2.75rem]">
 					Frequently Asked Questions
 				</h2>

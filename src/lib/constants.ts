@@ -14,6 +14,11 @@ import {
 	UserCheck,
 	UserRound,
 	Users,
+	Lightbulb,
+	ClipboardCheck,
+	Database,
+	FileText,
+	BadgeCheck,
 } from "lucide-react";
 import {
 	FaXTwitter,
@@ -179,13 +184,6 @@ export const contactOptions = [
 	},
 ] as const;
 
-export const foundationalPillarsSection = {
-	eyebrow: "What We Stand On",
-	heading: "Our Foundational Pillars",
-	description:
-		"Five principles that shape every fellowship, mentorship pathway, and collaboration we build across the alliance.",
-} as const;
-
 export const foundationalPillars = [
 	{
 		id: "equity",
@@ -269,5 +267,43 @@ export const supports = [
 		description:
 			"Receive structured, constructive feedback on your drafts before submission helping you put your best work forward.",
 		icon: FileEdit,
+	},
+] as const;
+
+export const researchProcesses = [
+	{
+		id: "research-question",
+		index: "01",
+		title: "Identify Your Research Question",
+		body: "We help you discover compelling cardiovascular topics aligned with your clinical interests and the current needs of the literature. Not sure where to begin? Our mentors will guide you.",
+		icon: Lightbulb,
+	},
+	{
+		id: "study-design",
+		index: "02",
+		title: "Design Your Study",
+		body: "From case reports to systematic reviews, our team helps you design a rigorous, publishable study with appropriate methodology and ethical considerations.",
+		icon: ClipboardCheck,
+	},
+	{
+		id: "data-analysis",
+		index: "03",
+		title: "Collect & Analyze Data",
+		body: "Access templates, tools, and expert support for data collection and statistical analysis — no experience required to get started.",
+		icon: Database,
+	},
+	{
+		id: "manuscript-writing",
+		index: "04",
+		title: "Write Your Manuscript",
+		body: "Our writing webinars, templates, and one-on-one feedback sessions transform raw findings into polished manuscripts ready for journal submission.",
+		icon: FileText,
+	},
+	{
+		id: "submit-publish",
+		index: "05",
+		title: "Submit & Publish",
+		body: "We guide you through journal selection, peer review response, and the final publication process — including open-access options.",
+		icon: BadgeCheck,
 	},
 ] as const;

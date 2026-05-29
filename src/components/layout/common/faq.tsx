@@ -48,8 +48,7 @@ const faqs: FrequentlyAskedQuestion[] = [
 		icon: CircleDollarSign,
 	},
 	{
-		question:
-			"Can I participate in research if I'm not a medical student yet?",
+		question: "Can I participate in research if I'm not a medical student yet?",
 		answer:
 			"Pre-medical students and undergraduates interested in cardiovascular research are welcome to apply. Contact us to discuss your background and goals.",
 		icon: GraduationCap,
@@ -59,7 +58,7 @@ const faqs: FrequentlyAskedQuestion[] = [
 export default function Faq() {
 	return (
 		<section className="container mx-auto">
-			<div className="px-6 text-center">
+			<div className="px-6 text-center scroll-mt-24 pb-20 md:pb-32">
 				<h2 className="text-balance text-center font-medium text-4xl tracking-[-0.04em] sm:text-[2.75rem]">
 					Frequently Asked Questions
 				</h2>

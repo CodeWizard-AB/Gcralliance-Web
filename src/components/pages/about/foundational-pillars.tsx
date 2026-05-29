@@ -1,13 +1,8 @@
 import { Cover } from "@/components/ui/cover";
-import {
-	foundationalPillars,
-	foundationalPillarsSection,
-} from "@/lib/constants";
+import { foundationalPillars } from "@/lib/constants";
 import { Layers } from "lucide-react";
 
 export default function FoundationalPillars() {
-	const { eyebrow, heading, description } = foundationalPillarsSection;
-
 	return (
 		<section
 			id="foundational-pillars"
@@ -19,18 +14,20 @@ export default function FoundationalPillars() {
 					<div className="text-center lg:sticky lg:top-28 lg:self-start lg:text-left">
 						<div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-sm font-semibold tracking-wide text-primary">
 							<Layers className="size-4" aria-hidden />
-							{eyebrow}
+							What We Stand On
 						</div>
 						<h2
 							id="foundational-pillars-heading"
 							className="mt-4 text-balance text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem] lg:leading-tight"
 						>
+							Our Foundational
 							<Cover className="text-3xl sm:text-4xl lg:text-[2.75rem]">
-								{heading}
+								Pillars
 							</Cover>
 						</h2>
 						<p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-							{description}
+							Five principles that shape every fellowship, mentorship pathway,
+							and collaboration we build across the alliance
 						</p>
 
 						<div className="mt-8 hidden items-center gap-3 lg:flex" aria-hidden>

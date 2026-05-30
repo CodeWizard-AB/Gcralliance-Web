@@ -27,6 +27,11 @@ import {
 	FlaskConical,
 	FileCheck,
 	UserPlus,
+	FileSearch,
+	CalendarClock,
+	ShieldCheck,
+	HandHeart,
+	BookOpen,
 } from "lucide-react";
 import {
 	FaXTwitter,
@@ -92,8 +97,8 @@ export const tiers = [
 
 export const ORGANIZATION =
 	"Global Cardiovascular Research Alliance (GCRAlliance)";
-export const WEBSITE = "www.GCRAlliancelliance.org";
-export const EMAIL = "info@GCRAlliancelliance.org";
+export const WEBSITE = "www.GCRAlliance.org";
+export const EMAIL = "info@GCRAlliance.org";
 
 export const contactDetails = [
 	{
@@ -354,6 +359,47 @@ export const frequentFaqs: FrequentlyAskedQuestion[] = [
 		answer:
 			"Pre-medical students and undergraduates interested in cardiovascular research are welcome to apply. Contact us to discuss your background and goals.",
 		icon: GraduationCap,
+	},
+] as const;
+
+export const researchFaqs: FrequentlyAskedQuestion[] = [
+	{
+		question:
+			"Do I need prior research experience to participate in GCRAlliance's mentorship program?",
+		answer:
+			"Not at all. Our program is specifically designed for beginners. We meet you exactly where you are and build your confidence step by step.",
+		icon: GraduationCap,
+	},
+	{
+		question: "What types of research can I produce through GCRAlliance?",
+		answer:
+			"We primarily support case reports, literature reviews, systematic reviews, and original clinical research with a focus on cardiovascular topics.",
+		icon: FileSearch,
+	},
+	{
+		question:
+			"How long does it take to publish a paper with GCRAlliance's help?",
+		answer:
+			"Timelines vary depending on the study type and journal requirements, but most members publish their first case report within 3–6 months of starting the process.",
+		icon: CalendarClock,
+	},
+	{
+		question: "Is my research confidential?",
+		answer:
+			"Yes. All research discussions, drafts, and patient information shared within the mentorship program are treated with strict confidentiality.",
+		icon: ShieldCheck,
+	},
+	{
+		question: "Are there free or discounted research mentorship options?",
+		answer:
+			"Yes. GCRAlliance is committed to equity. We offer subsidized and fully free mentorship access for students from low- and middle-income countries and underserved communities.",
+		icon: HandHeart,
+	},
+	{
+		question: "Can I participate in research if I'm not a medical student yet?",
+		answer:
+			"Pre-medical students and undergraduates interested in cardiovascular research are welcome to apply. Contact us to discuss your background and goals.",
+		icon: BookOpen,
 	},
 ] as const;
 

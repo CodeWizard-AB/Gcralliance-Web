@@ -2,7 +2,7 @@
 
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { contactFormSchema, type ContactFormSchema } from "@/lib/validations";
+import { contactFormSchema, type ContactFormSchema } from "@/lib/validations/contact";
 import { Field, FieldError, FieldGroup, FieldLabel } from "../ui/field";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";

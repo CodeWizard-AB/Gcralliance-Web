@@ -3,6 +3,7 @@ import Faq from "@/components/layout/common/faq";
 import ResearchBanner from "@/components/pages/research/research-banner";
 import ResearchProcess from "@/components/pages/research/research-process";
 import ResearchSupport from "@/components/pages/research/research-support";
+import { researchFaqs } from "@/lib/constants";
 
 export default function Research() {
 	return (
@@ -10,7 +11,7 @@ export default function Research() {
 			<ResearchBanner />
 			<ResearchProcess />
 			<ResearchSupport />
-			<Faq />
+			<Faq faqs={researchFaqs} />
 			<NewsletterForm />
 		</section>
 	);

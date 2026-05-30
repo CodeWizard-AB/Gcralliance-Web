@@ -19,6 +19,14 @@ import {
 	Database,
 	FileText,
 	BadgeCheck,
+	Clock,
+	ShieldPlus,
+	CircleDollarSign,
+	Globe,
+	Clock3,
+	FlaskConical,
+	FileCheck,
+	UserPlus,
 } from "lucide-react";
 import {
 	FaXTwitter,
@@ -26,6 +34,7 @@ import {
 	FaInstagram,
 	FaLinkedin,
 } from "react-icons/fa6";
+import { FrequentlyAskedQuestion } from "./types";
 
 export const navLinks = [
 	{ name: "Home", href: "/" },
@@ -305,5 +314,86 @@ export const researchProcesses = [
 		title: "Submit & Publish",
 		body: "We guide you through journal selection, peer review response, and the final publication process — including open-access options.",
 		icon: BadgeCheck,
+	},
+] as const;
+
+export const frequentFaqs: FrequentlyAskedQuestion[] = [
+	{
+		question:
+			"Do I need prior research experience to participate in GCRA's mentorship program?",
+		answer:
+			"Not at all. Our program is specifically designed for beginners. We meet you exactly where you are and build your confidence step by step.",
+		icon: Users,
+	},
+	{
+		question: "What types of research can I produce through GCRA?",
+		answer:
+			"We primarily support case reports, literature reviews, systematic reviews, and original clinical research with a focus on cardiovascular topics.",
+		icon: FileText,
+	},
+	{
+		question: "How long does it take to publish a paper with GCRA's help?",
+		answer:
+			"Timelines vary depending on the study type and journal requirements, but most members publish their first case report within 3-6 months of starting the process.",
+		icon: Clock,
+	},
+	{
+		question: "Is my research confidential?",
+		answer:
+			"Yes. All research discussions, drafts, and patient information shared within the mentorship program are treated with strict confidentiality.",
+		icon: ShieldPlus,
+	},
+	{
+		question: "Are there free or discounted research mentorship options?",
+		answer:
+			"Yes. GCRA is committed to equity. We offer subsidized and fully free mentorship access for students from low- and middle-income countries and underserved communities.",
+		icon: CircleDollarSign,
+	},
+	{
+		question: "Can I participate in research if I'm not a medical student yet?",
+		answer:
+			"Pre-medical students and undergraduates interested in cardiovascular research are welcome to apply. Contact us to discuss your background and goals.",
+		icon: GraduationCap,
+	},
+] as const;
+
+export const ambassadorFaqs: FrequentlyAskedQuestion[] = [
+	{
+		question: "Do I need research experience to become an Ambassador?",
+		answer:
+			"No. Enthusiasm, leadership potential, and a genuine passion for cardiovascular medicine are what matter most. We'll provide the training and support.",
+		icon: UserPlus,
+	},
+	{
+		question:
+			"Is the Ambassador Program open to students outside the United States?",
+		answer:
+			"Absolutely. In fact, we actively encourage applications from students in underserved and underrepresented regions. Global diversity is core to what GCRAlliance stands for.",
+		icon: Globe,
+	},
+	{
+		question: "How many hours per month does the role require?",
+		answer:
+			"Typically 5–8 hours per month. This includes attending virtual ambassador meetings, organizing or participating in at least one local event per semester, and engaging with the GCRAlliance community online.",
+		icon: Clock3,
+	},
+	{
+		question:
+			"Can I be an Ambassador and still participate in research mentorship?",
+		answer:
+			"Yes — and we encourage it. Many of our most impactful Ambassadors are also active researchers. Being involved in both enriches your experience and your contributions to the community.",
+		icon: FlaskConical,
+	},
+	{
+		question: "What happens after my Ambassador term ends?",
+		answer:
+			"Ambassadors who complete their term in good standing receive recognition, a recommendation letter, and are invited to join our Alumni Ambassador network — a lifelong connection to the GCRAlliance community.",
+		icon: Award,
+	},
+	{
+		question: "How do I apply?",
+		answer:
+			'Click the "Apply to Be an Ambassador" button above. Applications are reviewed on a rolling basis. Shortlisted candidates will be invited for a brief virtual interview.',
+		icon: FileCheck,
 	},
 ] as const;

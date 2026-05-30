@@ -1,70 +1,34 @@
-import {
-	CircleDollarSign,
-	Clock,
-	FileText,
-	GraduationCap,
-	type LucideIcon,
-	ShieldPlus,
-	Users,
-} from "lucide-react";
+import { FrequentlyAskedQuestion } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { MessageCircleQuestion } from "lucide-react";
 
-type FrequentlyAskedQuestion = {
-	question: string;
-	answer: string;
-	icon: LucideIcon;
-};
-
-const faqs: FrequentlyAskedQuestion[] = [
-	{
-		question:
-			"Do I need prior research experience to participate in GCRA's mentorship program?",
-		answer:
-			"Not at all. Our program is specifically designed for beginners. We meet you exactly where you are and build your confidence step by step.",
-		icon: Users,
-	},
-	{
-		question: "What types of research can I produce through GCRA?",
-		answer:
-			"We primarily support case reports, literature reviews, systematic reviews, and original clinical research with a focus on cardiovascular topics.",
-		icon: FileText,
-	},
-	{
-		question: "How long does it take to publish a paper with GCRA's help?",
-		answer:
-			"Timelines vary depending on the study type and journal requirements, but most members publish their first case report within 3-6 months of starting the process.",
-		icon: Clock,
-	},
-	{
-		question: "Is my research confidential?",
-		answer:
-			"Yes. All research discussions, drafts, and patient information shared within the mentorship program are treated with strict confidentiality.",
-		icon: ShieldPlus,
-	},
-	{
-		question: "Are there free or discounted research mentorship options?",
-		answer:
-			"Yes. GCRA is committed to equity. We offer subsidized and fully free mentorship access for students from low- and middle-income countries and underserved communities.",
-		icon: CircleDollarSign,
-	},
-	{
-		question: "Can I participate in research if I'm not a medical student yet?",
-		answer:
-			"Pre-medical students and undergraduates interested in cardiovascular research are welcome to apply. Contact us to discuss your background and goals.",
-		icon: GraduationCap,
-	},
-];
-
-export default function Faq() {
+export default function Faq({
+	title = "Frequently Asked Questions",
+	description = "Find answers to common questions about our products and services",
+	faqs,
+}: {
+	title?: string;
+	description?: string;
+	faqs: FrequentlyAskedQuestion[];
+}) {
 	return (
 		<section className="container mx-auto">
 			<div className="px-6 text-center">
-				<h2 className="text-balance text-center font-medium text-4xl tracking-[-0.04em] sm:text-[2.75rem]">
-					Frequently Asked Questions
-				</h2>
-				<p className="mt-3 text-balance text-center text-lg text-muted-foreground md:text-2xl md:tracking-[-0.015em]">
-					Find answers to common questions about our products and services
-				</p>
+				<div className="mx-auto max-w-3xl text-center">
+					<div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-sm font-semibold tracking-wide text-primary">
+						<MessageCircleQuestion className="size-4" aria-hidden />
+						Frequently Asked Questions
+					</div>
+					<h2
+						id="ambassadors-members-heading"
+						className="mt-4 text-balance text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl"
+					>
+						{title}
+					</h2>
+					<p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
+						{description}
+					</p>
+				</div>
 
 				<div className="mx-auto mt-12 grid grid-cols-1 sm:mt-16 md:grid-cols-2">
 					{faqs.map((faq, index) => (

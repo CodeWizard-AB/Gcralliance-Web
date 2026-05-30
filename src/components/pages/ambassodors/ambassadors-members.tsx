@@ -11,7 +11,7 @@ export default async function AmbassadorsMembers() {
 	return (
 		<section
 			id="ambassadors-members"
-			className="scroll-mt-24 overflow-hidden"
+			className="scroll-mt-24 overflow-hidden pb-24 md:pb-32"
 			aria-labelledby="ambassadors-members-heading"
 		>
 			<div className="mx-auto max-w-3xl text-center">

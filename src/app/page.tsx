@@ -3,6 +3,7 @@ import Faq from "@/components/layout/common/faq";
 import Hero from "@/components/pages/home/hero";
 import Membership from "@/components/pages/home/membership";
 import Mission from "@/components/pages/home/mission";
+import { frequentFaqs } from "@/lib/constants";
 
 export default function Home() {
 	return (
@@ -10,7 +11,7 @@ export default function Home() {
 			<Hero />
 			<Mission />
 			<Membership />
-			<Faq />
+			<Faq faqs={frequentFaqs} />
 			<NewsletterForm />
 		</>
 	);

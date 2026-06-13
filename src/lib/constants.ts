@@ -32,6 +32,8 @@ import {
 	ShieldCheck,
 	HandHeart,
 	BookOpen,
+	HeartPulse,
+	Brain,
 } from "lucide-react";
 import {
 	FaXTwitter,
@@ -45,7 +47,7 @@ export const navLinks = [
 	{ name: "Home", href: "/" },
 	{ name: "About", href: "/about" },
 	{ name: "Research", href: "/research" },
-	// { name: "Blog", href: "/blog" },
+	{ name: "Academic", href: "/academic" },
 	{ name: "Ambassadors", href: "/ambassadors" },
 	{ name: "Contact Us", href: "/contact" },
 ] as const;
@@ -486,3 +488,29 @@ export const STEPS = [
 ] as const;
 
 export const TOTAL_STEPS = STEPS.length;
+
+export const focusAreas = [
+	{
+		icon: BookOpen,
+		title: "USMLE Step 1",
+		description:
+			"Build strong foundations with high-yield, concept-driven teaching.",
+		iconClassName:
+			"border-primary/25 bg-primary/10 text-primary group-hover:bg-primary/15",
+	},
+	{
+		icon: Brain,
+		title: "Step 2 CK",
+		description:
+			"Sharpen clinical reasoning through specialist-led case discussions.",
+		iconClassName:
+			"border-chart-2/30 bg-chart-2/10 text-chart-2 group-hover:bg-chart-2/15 dark:border-chart-5/30 dark:bg-chart-5/10 dark:text-chart-5",
+	},
+	{
+		icon: HeartPulse,
+		title: "Cardiovascular Topics",
+		description: "Deepen understanding of high-yield cardiology content.",
+		iconClassName:
+			"border-primary/25 bg-primary/10 text-primary group-hover:bg-primary/15",
+	},
+] as const;	

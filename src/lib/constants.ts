@@ -443,3 +443,46 @@ export const ambassadorFaqs: FrequentlyAskedQuestion[] = [
 		icon: FileCheck,
 	},
 ] as const;
+
+export const STEPS = [
+	{
+		id: 1,
+		label: "Personal Identity",
+		title: "Personal Information",
+		nextLabel: "Academic & Professional Background",
+		fields: ["fullName", "email", "phone", "linkedInUrl"] as const,
+	},
+	{
+		id: 2,
+		label: "Professional Background",
+		title: "Academic & Professional Background",
+		nextLabel: "Ambassador Questionnaire",
+		fields: [
+			"countryOfResidence",
+			"institution",
+			"programDegree",
+			"expectedGraduationYear",
+		] as const,
+	},
+	{
+		id: 3,
+		label: "Ambassador Questionnaire",
+		title: "Tell Us About Yourself",
+		nextLabel: "Attachments",
+		fields: [
+			"whyAmbassador",
+			"leadershipExperience",
+			"promotionPlan",
+			"timeCommitment",
+		] as const,
+	},
+	{
+		id: 4,
+		label: "Attachments",
+		title: "Upload Your CV",
+		nextLabel: null,
+		fields: ["cv"] as const,
+	},
+] as const;
+
+export const TOTAL_STEPS = STEPS.length;

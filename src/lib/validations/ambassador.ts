@@ -22,9 +22,9 @@ const maxWords = (max: number, fieldName: string) =>
 
 // * GRADUATION YEAR OPTIONS
 const CURRENT_YEAR = new Date().getFullYear();
-const GRADUATION_YEARS = Array.from({ length: 12 }, (_, i) =>
+export const GRADUATION_YEARS = Array.from({ length: 12 }, (_, i) =>
 	String(CURRENT_YEAR + i),
-);
+) as [string, ...string[]];
 
 // * CV FILE VALIDATION
 const CV_MAX_BYTES = 5 * 1024 * 1024; // 5 MB
@@ -120,3 +120,40 @@ export const ambassadorApplicationSchema = z.object({
 	// * SECTION 4: ATTACHMENTS
 	cv: cvSchema,
 });
+
+// * INFERRED TYPES
+export type AmbassadorApplicationType = z.infer<
+	typeof ambassadorApplicationSchema
+>;
+
+// * PER-STEP SCHEMAS
+export const personalInfoSchema = ambassadorApplicationSchema.pick({
+	fullName: true,
+	email: true,
+	phone: true,
+	linkedInUrl: true,
+});
+
+export const backgroundSchema = ambassadorApplicationSchema.pick({
+	countryOfResidence: true,
+	institution: true,
+	programDegree: true,
+	expectedGraduationYear: true,
+});
+
+export const questionnaireSchema = ambassadorApplicationSchema.pick({
+	whyAmbassador: true,
+	leadershipExperience: true,
+	promotionPlan: true,
+	timeCommitment: true,
+});
+
+export const attachmentsSchema = ambassadorApplicationSchema.pick({
+	cv: true,
+});
+
+// * PER-STEP INFERRED TYPES
+export type PersonalInfoInput = z.infer<typeof personalInfoSchema>;
+export type BackgroundInput = z.infer<typeof backgroundSchema>;
+export type QuestionnaireInput = z.infer<typeof questionnaireSchema>;
+export type AttachmentsInput = z.infer<typeof attachmentsSchema>;

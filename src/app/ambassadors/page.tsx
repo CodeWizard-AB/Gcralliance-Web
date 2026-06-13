@@ -1,5 +1,6 @@
 import NewsletterForm from "@/components/forms/newsletterForm";
 import Faq from "@/components/layout/common/faq";
+// import AmbassadorsApplication from "@/components/pages/ambassodors/ambassadors-application";
 import AmbassadorsBanner from "@/components/pages/ambassodors/ambassadors-banner";
 import AmbassadorsMembers from "@/components/pages/ambassodors/ambassadors-members";
 import { ambassadorFaqs } from "@/lib/constants";
@@ -9,6 +10,7 @@ export default function Ambassadors() {
 		<section className="container mx-auto px-4 sm:px-6">
 			<AmbassadorsBanner />
 			<AmbassadorsMembers />
+			{/* <AmbassadorsApplication /> */}
 			<Faq
 				faqs={ambassadorFaqs}
 				title="Ambassador FAQs"

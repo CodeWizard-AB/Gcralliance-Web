@@ -2,6 +2,7 @@ import Faq from "@/components/layout/common/faq";
 import AcademicBanner from "@/components/pages/academic/academic-banner";
 import AcademicOverview from "@/components/pages/academic/academic-overview";
 import AcademicProgrammes from "@/components/pages/academic/academic-programmes";
+import AcademicBenefits from "@/components/pages/academic/academic-benefits";
 import { academicFaqs } from "@/lib/constants";
 
 export default function AcademicPage() {
@@ -10,6 +11,7 @@ export default function AcademicPage() {
 			<AcademicBanner />
 			<AcademicOverview />
 			<AcademicProgrammes />
+			<AcademicBenefits />
 			<Faq
 				faqs={academicFaqs}
 				title="Academic FAQs"

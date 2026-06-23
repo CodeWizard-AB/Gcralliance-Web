@@ -17,3 +17,13 @@ export type AcademicProgramme = {
 	iconClassName: string;
 	cardClassName: string;
 };
+
+export type AcademicBenefit = {
+	id: string;
+	index: string;
+	title: string;
+	description: string;
+	icon: LucideIcon;
+	iconClassName: string;
+	cardClassName: string;
+};

@@ -38,6 +38,8 @@ import {
 	Pill,
 	Video,
 	MessageSquare,
+	Target,
+	Radio,
 } from "lucide-react";
 import {
 	FaXTwitter,
@@ -45,7 +47,11 @@ import {
 	FaInstagram,
 	FaLinkedin,
 } from "react-icons/fa6";
-import { FrequentlyAskedQuestion, AcademicProgramme } from "./types";
+import {
+	FrequentlyAskedQuestion,
+	AcademicProgramme,
+	AcademicBenefit,
+} from "./types";
 
 export const navLinks = [
 	{ name: "Home", href: "/" },
@@ -608,6 +614,74 @@ export const academicProgrammes: AcademicProgramme[] = [
 			"border-chart-2/30 bg-chart-2/10 text-chart-2 group-hover:bg-chart-2/15 dark:border-chart-5/30 dark:bg-chart-5/10 dark:text-chart-5",
 		cardClassName:
 			"hover:border-chart-2/25 hover:bg-chart-2/6 dark:hover:border-chart-5/25 dark:hover:bg-chart-5/6",
+	},
+];
+
+export const academicBenefitsSection = {
+	eyebrow: "Why GCRAlliance",
+	heading: "Why Learn With GCRAlliance?",
+	headingAccent: "GCRAlliance",
+	subheading:
+		"Not Just Another Lecture, A Community of Learners and Teachers",
+} as const;
+
+export const academicBenefits: AcademicBenefit[] = [
+	{
+		id: "clinician-led",
+		index: "01",
+		title: "Taught by Medical Students Who Passed the Exams, Not Algorithms",
+		description:
+			"Every session is led by a practicing physician or senior clinician who combines real clinical experience with an understanding of what the boards actually test.",
+		icon: UserCheck,
+		iconClassName:
+			"border-primary/25 bg-primary/10 text-primary group-hover:bg-primary/15",
+		cardClassName: "hover:border-primary/20 hover:bg-primary/6",
+	},
+	{
+		id: "high-yield",
+		index: "02",
+		title: "High-Yield by Design",
+		description:
+			"No filler. Every session is structured around the concepts, cases, and question types most likely to appear on your exams and most relevant to your clinical practice.",
+		icon: Target,
+		iconClassName:
+			"border-chart-2/30 bg-chart-2/10 text-chart-2 group-hover:bg-chart-2/15 dark:border-chart-5/30 dark:bg-chart-5/10 dark:text-chart-5",
+		cardClassName:
+			"hover:border-chart-2/25 hover:bg-chart-2/6 dark:hover:border-chart-5/25 dark:hover:bg-chart-5/6",
+	},
+	{
+		id: "interactive-live",
+		index: "03",
+		title: "Interactive & Live",
+		description:
+			"Ask questions in real time, work through cases with peers, and get answers from the facilitator — not just slides.",
+		icon: Radio,
+		iconClassName:
+			"border-primary/25 bg-primary/10 text-primary group-hover:bg-primary/15",
+		cardClassName: "hover:border-primary/20 hover:bg-primary/6",
+	},
+	{
+		id: "global-community",
+		index: "04",
+		title: "Global Peer Community",
+		description:
+			"Study alongside medical students from around the world. Our academic sessions bring together diverse perspectives and create study networks that last well beyond the session itself.",
+		icon: Globe,
+		iconClassName:
+			"border-chart-2/30 bg-chart-2/10 text-chart-2 group-hover:bg-chart-2/15 dark:border-chart-5/30 dark:bg-chart-5/10 dark:text-chart-5",
+		cardClassName:
+			"hover:border-chart-2/25 hover:bg-chart-2/6 dark:hover:border-chart-5/25 dark:hover:bg-chart-5/6",
+	},
+	{
+		id: "accessible",
+		index: "05",
+		title: "Accessible to All",
+		description:
+			"We offer subsidised and free access to students from low- and middle-income countries and underserved communities. Academic excellence should not depend on your postcode.",
+		icon: HandHeart,
+		iconClassName:
+			"border-primary/25 bg-primary/10 text-primary group-hover:bg-primary/15",
+		cardClassName: "hover:border-primary/20 hover:bg-primary/6",
 	},
 ];
 

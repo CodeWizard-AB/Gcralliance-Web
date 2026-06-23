@@ -7,7 +7,7 @@ export default function MembershipCta() {
 	return (
 		<section
 			id="membership-cta"
-			className="scroll-mt-24"
+			className="scroll-mt-24 mt-20 md:mt-24"
 			aria-labelledby="membership-cta-heading"
 		>
 			<div className="container relative mx-auto">

@@ -34,6 +34,8 @@ import {
 	BookOpen,
 	HeartPulse,
 	Brain,
+	Activity,
+	Pill,
 } from "lucide-react";
 import {
 	FaXTwitter,
@@ -41,7 +43,7 @@ import {
 	FaInstagram,
 	FaLinkedin,
 } from "react-icons/fa6";
-import { FrequentlyAskedQuestion } from "./types";
+import { FrequentlyAskedQuestion, AcademicProgramme } from "./types";
 
 export const navLinks = [
 	{ name: "Home", href: "/" },
@@ -513,4 +515,96 @@ export const focusAreas = [
 		iconClassName:
 			"border-primary/25 bg-primary/10 text-primary group-hover:bg-primary/15",
 	},
-] as const;	
+] as const;
+
+export const academicProgrammesSection = {
+	eyebrow: "Programmes",
+	heading: "Academic Programmes & Masterclasses",
+	headingAccent: "Masterclasses",
+	subheading:
+		"Expert-Led. High-Yield. Built for Medical Students and Allied Sciences",
+} as const;
+
+export const academicProgrammes: AcademicProgramme[] = [
+	{
+		id: "step-1-cv-masterclass",
+		index: "01",
+		title: "Step 1 Cardiovascular Masterclass",
+		description:
+			"A focused deep-dive into the cardiovascular content most heavily tested on USMLE Step 1. Covers cardiac physiology, pharmacology, pathology, and clinical correlates — taught by physicians who know exactly how boards test this material.",
+		format: "Live virtual sessions + recorded replays",
+		level: "Open to all members",
+		icon: HeartPulse,
+		iconClassName:
+			"border-primary/25 bg-primary/10 text-primary group-hover:bg-primary/15",
+		cardClassName: "hover:border-primary/20 hover:bg-primary/6",
+	},
+	{
+		id: "step-2-ck-cardiology",
+		index: "02",
+		title: "Step 2 CK Clinical Cardiology Series",
+		description:
+			"Case-based teaching sessions designed to sharpen your clinical reasoning for USMLE Step 2 CK. Each session presents real-world cardiovascular presentations and walks through diagnostic approach, management, and the high-yield teaching points behind each case.",
+		format: "Weekly live case sessions",
+		level: "Intermediate",
+		icon: Brain,
+		iconClassName:
+			"border-chart-2/30 bg-chart-2/10 text-chart-2 group-hover:bg-chart-2/15 dark:border-chart-5/30 dark:bg-chart-5/10 dark:text-chart-5",
+		cardClassName:
+			"hover:border-chart-2/25 hover:bg-chart-2/6 dark:hover:border-chart-5/25 dark:hover:bg-chart-5/6",
+	},
+	{
+		id: "cv-pathology-bootcamp",
+		index: "03",
+		title: "Cardiovascular Pathology Bootcamp",
+		description:
+			"From MI and heart failure to cardiomyopathies and valvular disease — this bootcamp breaks down the pathophysiology, diagnostic findings, and exam pearls for the most commonly tested cardiovascular conditions.",
+		format: "4-week intensive",
+		level: "Beginner to intermediate",
+		icon: FlaskConical,
+		iconClassName:
+			"border-primary/25 bg-primary/10 text-primary group-hover:bg-primary/15",
+		cardClassName: "hover:border-primary/20 hover:bg-primary/6",
+	},
+	{
+		id: "ecg-masterclass",
+		index: "04",
+		title: "ECG Interpretation Masterclass",
+		description:
+			"A step-by-step, clinically grounded programme covering ECG interpretation from the basics through to complex arrhythmias. Perfect for students preparing for boards or clinical rotations.",
+		format: "3-part live series + practice sets",
+		level: "All levels",
+		icon: Activity,
+		iconClassName:
+			"border-chart-2/30 bg-chart-2/10 text-chart-2 group-hover:bg-chart-2/15 dark:border-chart-5/30 dark:bg-chart-5/10 dark:text-chart-5",
+		cardClassName:
+			"hover:border-chart-2/25 hover:bg-chart-2/6 dark:hover:border-chart-5/25 dark:hover:bg-chart-5/6",
+	},
+	{
+		id: "pharmacology-series",
+		index: "05",
+		title: "Pharmacology High-Yield Series",
+		description:
+			"A targeted review of cardiovascular pharmacology — antihypertensives, antiarrhythmics, heart failure medications, anticoagulants, and more — taught with mechanisms, mnemonics, and board-style question practice built in.",
+		format: "On-demand video modules + live Q&A",
+		level: "All levels",
+		icon: Pill,
+		iconClassName:
+			"border-primary/25 bg-primary/10 text-primary group-hover:bg-primary/15",
+		cardClassName: "hover:border-primary/20 hover:bg-primary/6",
+	},
+	{
+		id: "clinical-reasoning",
+		index: "06",
+		title: "Clinical Reasoning & Presentation Skills",
+		description:
+			"Prepares students for OSCEs, shelf exams, and clinical rotations by developing structured clinical reasoning, differential diagnosis frameworks, and confident patient presentation skills in cardiology and beyond.",
+		format: "Small group live sessions",
+		level: "Intermediate to advanced",
+		icon: Presentation,
+		iconClassName:
+			"border-chart-2/30 bg-chart-2/10 text-chart-2 group-hover:bg-chart-2/15 dark:border-chart-5/30 dark:bg-chart-5/10 dark:text-chart-5",
+		cardClassName:
+			"hover:border-chart-2/25 hover:bg-chart-2/6 dark:hover:border-chart-5/25 dark:hover:bg-chart-5/6",
+	},
+];

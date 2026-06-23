@@ -7,7 +7,7 @@ export default function AcademicOverview() {
 	return (
 		<section
 			id="academic-overview"
-			className="scroll-mt-24 py-20 md:py-32"
+			className="scroll-mt-24"
 			aria-labelledby="academic-overview-heading"
 		>
 			<div className="container relative mx-auto">

@@ -36,6 +36,8 @@ import {
 	Brain,
 	Activity,
 	Pill,
+	Video,
+	MessageSquare,
 } from "lucide-react";
 import {
 	FaXTwitter,
@@ -608,3 +610,43 @@ export const academicProgrammes: AcademicProgramme[] = [
 			"hover:border-chart-2/25 hover:bg-chart-2/6 dark:hover:border-chart-5/25 dark:hover:bg-chart-5/6",
 	},
 ];
+
+export const academicFaqs: FrequentlyAskedQuestion[] = [
+	{
+		question: "Are sessions live or pre-recorded?",
+		answer:
+			"Most flagship masterclasses are delivered live to allow real-time interaction. Recordings are made available to registered members shortly after each session through the member portal.",
+		icon: Video,
+	},
+	{
+		question: "What level are the academic sessions pitched at?",
+		answer:
+			"We offer sessions across all levels — from pre-clinical foundations through to advanced clinical reasoning. Each session listing clearly states the recommended experience level so you can choose what fits your stage of training.",
+		icon: GraduationCap,
+	},
+	{
+		question: "Do I need to be a GCRAlliance member to attend?",
+		answer:
+			"Some introductory sessions are open to all. Full access to the Academic Affairs programme library, live masterclasses, and recorded content is available to GCRAlliance members. Visit the Membership page to see your options.",
+		icon: BadgeCheck,
+	},
+	{
+		question:
+			"Are sessions relevant outside of USMLE — for example, for UK or international students?",
+		answer:
+			"Yes. While some content references USMLE board structure, the clinical knowledge, pharmacology, and ECG content is universally applicable. We are expanding our library with content specifically tailored to MLA, PLAB, and other international licensing examinations.",
+		icon: Globe,
+	},
+	{
+		question: "Can I access sessions if I'm in a different time zone?",
+		answer:
+			"Absolutely. All live sessions are recorded and made available for replay. We also aim to schedule sessions across a range of time zones to maximise global accessibility.",
+		icon: Clock3,
+	},
+	{
+		question: "How do I suggest a topic for a future session?",
+		answer:
+			"We welcome topic requests from our membership. Use the Contact Us page or the suggestion box in the member portal to let us know what you want us to cover next.",
+		icon: MessageSquare,
+	},
+] as const;

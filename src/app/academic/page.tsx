@@ -1,6 +1,8 @@
+import Faq from "@/components/layout/common/faq";
 import AcademicBanner from "@/components/pages/academic/academic-banner";
 import AcademicOverview from "@/components/pages/academic/academic-overview";
 import AcademicProgrammes from "@/components/pages/academic/academic-programmes";
+import { academicFaqs } from "@/lib/constants";
 
 export default function AcademicPage() {
 	return (
@@ -8,6 +10,11 @@ export default function AcademicPage() {
 			<AcademicBanner />
 			<AcademicOverview />
 			<AcademicProgrammes />
+			<Faq
+				faqs={academicFaqs}
+				title="Academic FAQs"
+				description="Find answers to common questions about our academic programs and resources"
+			/>
 		</section>
 	);
 }
